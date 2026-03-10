@@ -62,7 +62,7 @@ const AuthModal = ({ open, onClose }: AuthModalProps) => {
           {mode === "login" ? "Entrar" : "Criar Conta"}
         </h2>
         <p className="text-sm text-muted-foreground mb-6">
-          {mode === "login" ? "Acesse sua conta VANGUARD" : "Junte-se à VANGUARD"}
+          {mode === "login" ? "Acesse sua conta Nobile" : "Junte-se à Nobile"}
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-4">

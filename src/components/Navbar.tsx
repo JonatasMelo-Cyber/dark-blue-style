@@ -26,7 +26,7 @@ const Navbar = () => {
       <nav className="sticky top-0 z-50 bg-primary border-b border-navy-light/30">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <Link to="/" className="text-xl font-bold tracking-wider text-primary-foreground">
-            VANGUARD<span className="text-accent">.</span>
+            Nobile<span className="text-accent">.</span>
           </Link>
 
           {/* Desktop nav */}

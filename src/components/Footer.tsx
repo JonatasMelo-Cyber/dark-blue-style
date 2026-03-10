@@ -25,7 +25,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="border-t border-primary-foreground/10 mt-8 pt-6 text-center text-xs">
-        © 2026 VANGUARD. Todos os direitos reservados.
+        © 2026 Nobile. Todos os direitos reservados.
       </div>
     </div>
   </footer>
