@@ -16,6 +16,7 @@ const Footer = () => (
             <Link to="/" className="block hover:text-primary-foreground transition-colors">Home</Link>
             <Link to="/catalogo" className="block hover:text-primary-foreground transition-colors">Catálogo</Link>
             <Link to="/ajuda" className="block hover:text-primary-foreground transition-colors">Ajuda</Link>
+            <Link to="/admin" className="block hover:text-primary-foreground transition-colors">Painel Admin</Link>
           </div>
         </div>
         <div>
