@@ -6,7 +6,7 @@ const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h3 className="text-lg font-bold text-primary-foreground mb-3">
-            VANGUARD<span className="text-accent">.</span>
+            Nobile<span className="text-accent">.</span>
           </h3>
           <p className="text-sm leading-relaxed">Moda masculina com estilo e qualidade. Vista-se com confiança.</p>
         </div>
