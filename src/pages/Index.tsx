@@ -11,7 +11,7 @@ const Index = () => {
     <div>
       {/* Hero */}
       <section className="relative h-[85vh] min-h-[500px] overflow-hidden">
-        <img src={heroBanner} alt="Moda masculina VANGUARD" className="absolute inset-0 w-full h-full object-cover" />
+        <img src={heroBanner} alt="Moda masculina Nobile" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/60 to-transparent" />
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="max-w-lg">

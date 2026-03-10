@@ -6,7 +6,7 @@ const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h3 className="text-lg font-bold text-primary-foreground mb-3">
-            VANGUARD<span className="text-accent">.</span>
+            Nobile<span className="text-accent">.</span>
           </h3>
           <p className="text-sm leading-relaxed">Moda masculina com estilo e qualidade. Vista-se com confiança.</p>
         </div>
@@ -20,12 +20,12 @@ const Footer = () => (
         </div>
         <div>
           <h4 className="font-semibold text-primary-foreground mb-3 text-sm">CONTATO</h4>
-          <p className="text-sm">contato@vanguard.com.br</p>
+          <p className="text-sm">contato@nobile.com.br</p>
           <p className="text-sm mt-1">(11) 9999-9999</p>
         </div>
       </div>
       <div className="border-t border-primary-foreground/10 mt-8 pt-6 text-center text-xs">
-        © 2026 VANGUARD. Todos os direitos reservados.
+        © 2026 Nobile. Todos os direitos reservados.
       </div>
     </div>
   </footer>

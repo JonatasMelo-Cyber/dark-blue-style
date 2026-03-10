@@ -52,7 +52,7 @@ const Help = () => {
         <div className="mt-12 bg-card rounded-xl border border-border p-8 text-center">
           <h3 className="text-lg font-bold text-foreground mb-2">Ainda precisa de ajuda?</h3>
           <p className="text-sm text-muted-foreground mb-1">Envie um e-mail para:</p>
-          <p className="text-accent font-semibold">contato@vanguard.com.br</p>
+          <p className="text-accent font-semibold"><p className="text-accent font-semibold">contato@nobile.com.br</p></p>
           <p className="text-xs text-muted-foreground mt-3">Respondemos em até 24 horas úteis</p>
         </div>
       </div>
