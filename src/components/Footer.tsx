@@ -20,7 +20,7 @@ const Footer = () => (
         </div>
         <div>
           <h4 className="font-semibold text-primary-foreground mb-3 text-sm">CONTATO</h4>
-          <p className="text-sm">contato@vanguard.com.br</p>
+          <p className="text-sm">contato@nobile.com.br</p>
           <p className="text-sm mt-1">(11) 9999-9999</p>
         </div>
       </div>
