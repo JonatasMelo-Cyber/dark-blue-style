@@ -30,6 +30,7 @@ const AdminLayout = () => {
   const renderPage = () => {
     switch (activeTab) {
       case "employees": return <AdminEmployees />;
+      case "suppliers": return <AdminSuppliers />;
       case "sales": return <AdminSales />;
       case "reports": return <AdminReports />;
       case "settings": return <AdminSettings />;
