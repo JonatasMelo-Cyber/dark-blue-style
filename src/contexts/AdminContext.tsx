@@ -38,6 +38,9 @@ interface AdminContextType {
   addEmployee: (emp: Omit<Employee, "id" | "createdAt">) => void;
   removeEmployee: (id: string) => void;
   sales: Sale[];
+  suppliers: Supplier[];
+  addSupplier: (s: Omit<Supplier, "id">) => void;
+  removeSupplier: (id: string) => void;
 }
 
 const AdminContext = createContext<AdminContextType | undefined>(undefined);
