@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 const navItems = [
   { id: "dashboard", label: "Dashboard", icon: LayoutDashboard },
   { id: "employees", label: "Funcionários", icon: Users },
+  { id: "suppliers", label: "Fornecedores", icon: Truck },
   { id: "sales", label: "Vendas", icon: ShoppingCart },
   { id: "reports", label: "Relatórios", icon: BarChart3 },
   { id: "settings", label: "Personalizar", icon: Settings },
