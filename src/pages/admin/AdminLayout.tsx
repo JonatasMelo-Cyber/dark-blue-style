@@ -6,8 +6,9 @@ import AdminEmployees from "./AdminEmployees";
 import AdminSales from "./AdminSales";
 import AdminReports from "./AdminReports";
 import AdminSettings from "./AdminSettings";
+import AdminSuppliers from "./AdminSuppliers";
 import { Button } from "@/components/ui/button";
-import { LayoutDashboard, Users, ShoppingCart, BarChart3, Settings, LogOut, Menu, X, ChevronLeft } from "lucide-react";
+import { LayoutDashboard, Users, ShoppingCart, BarChart3, Settings, LogOut, Menu, X, ChevronLeft, Truck } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const navItems = [
