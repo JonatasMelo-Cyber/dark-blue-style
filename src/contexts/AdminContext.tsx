@@ -10,6 +10,16 @@ export interface Employee {
   createdAt: string;
 }
 
+export interface Supplier {
+  id: string;
+  companyName: string;
+  cnpj: string;
+  productBrand: string;
+  productName: string;
+  category: string;
+  price: number;
+}
+
 export interface Sale {
   id: string;
   customerName: string;
@@ -28,6 +38,9 @@ interface AdminContextType {
   addEmployee: (emp: Omit<Employee, "id" | "createdAt">) => void;
   removeEmployee: (id: string) => void;
   sales: Sale[];
+  suppliers: Supplier[];
+  addSupplier: (s: Omit<Supplier, "id">) => void;
+  removeSupplier: (id: string) => void;
 }
 
 const AdminContext = createContext<AdminContextType | undefined>(undefined);
@@ -68,6 +81,11 @@ export const AdminProvider = ({ children }: { children: ReactNode }) => {
     return saved ? JSON.parse(saved) : defaultSales;
   });
 
+  const [suppliers, setSuppliers] = useState<Supplier[]>(() => {
+    const saved = localStorage.getItem("suppliers");
+    return saved ? JSON.parse(saved) : [];
+  });
+
   const adminLogin = (email: string, password: string) => {
     const found = employees.find((e) => e.email === email && e.password === password);
     if (found) {
@@ -101,8 +119,24 @@ export const AdminProvider = ({ children }: { children: ReactNode }) => {
     localStorage.setItem("employees", JSON.stringify(updated));
   };
 
+  const addSupplier = (s: Omit<Supplier, "id">) => {
+    const newSupplier: Supplier = {
+      ...s,
+      id: `FORN${String(suppliers.length + 1).padStart(3, "0")}`,
+    };
+    const updated = [...suppliers, newSupplier];
+    setSuppliers(updated);
+    localStorage.setItem("suppliers", JSON.stringify(updated));
+  };
+
+  const removeSupplier = (id: string) => {
+    const updated = suppliers.filter((s) => s.id !== id);
+    setSuppliers(updated);
+    localStorage.setItem("suppliers", JSON.stringify(updated));
+  };
+
   return (
-    <AdminContext.Provider value={{ isAdminLoggedIn, adminLogin, adminLogout, employees, addEmployee, removeEmployee, sales }}>
+    <AdminContext.Provider value={{ isAdminLoggedIn, adminLogin, adminLogout, employees, addEmployee, removeEmployee, sales, suppliers, addSupplier, removeSupplier }}>
       {children}
     </AdminContext.Provider>
   );

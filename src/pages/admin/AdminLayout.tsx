@@ -6,13 +6,15 @@ import AdminEmployees from "./AdminEmployees";
 import AdminSales from "./AdminSales";
 import AdminReports from "./AdminReports";
 import AdminSettings from "./AdminSettings";
+import AdminSuppliers from "./AdminSuppliers";
 import { Button } from "@/components/ui/button";
-import { LayoutDashboard, Users, ShoppingCart, BarChart3, Settings, LogOut, Menu, X, ChevronLeft } from "lucide-react";
+import { LayoutDashboard, Users, ShoppingCart, BarChart3, Settings, LogOut, Menu, X, ChevronLeft, Truck } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const navItems = [
   { id: "dashboard", label: "Dashboard", icon: LayoutDashboard },
   { id: "employees", label: "Funcionários", icon: Users },
+  { id: "suppliers", label: "Fornecedores", icon: Truck },
   { id: "sales", label: "Vendas", icon: ShoppingCart },
   { id: "reports", label: "Relatórios", icon: BarChart3 },
   { id: "settings", label: "Personalizar", icon: Settings },
@@ -28,6 +30,7 @@ const AdminLayout = () => {
   const renderPage = () => {
     switch (activeTab) {
       case "employees": return <AdminEmployees />;
+      case "suppliers": return <AdminSuppliers />;
       case "sales": return <AdminSales />;
       case "reports": return <AdminReports />;
       case "settings": return <AdminSettings />;
