@@ -81,6 +81,11 @@ export const AdminProvider = ({ children }: { children: ReactNode }) => {
     return saved ? JSON.parse(saved) : defaultSales;
   });
 
+  const [suppliers, setSuppliers] = useState<Supplier[]>(() => {
+    const saved = localStorage.getItem("suppliers");
+    return saved ? JSON.parse(saved) : [];
+  });
+
   const adminLogin = (email: string, password: string) => {
     const found = employees.find((e) => e.email === email && e.password === password);
     if (found) {
