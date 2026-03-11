@@ -10,6 +10,16 @@ export interface Employee {
   createdAt: string;
 }
 
+export interface Supplier {
+  id: string;
+  companyName: string;
+  cnpj: string;
+  productBrand: string;
+  productName: string;
+  category: string;
+  price: number;
+}
+
 export interface Sale {
   id: string;
   customerName: string;
