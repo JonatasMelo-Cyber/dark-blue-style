@@ -114,8 +114,24 @@ export const AdminProvider = ({ children }: { children: ReactNode }) => {
     localStorage.setItem("employees", JSON.stringify(updated));
   };
 
+  const addSupplier = (s: Omit<Supplier, "id">) => {
+    const newSupplier: Supplier = {
+      ...s,
+      id: `FORN${String(suppliers.length + 1).padStart(3, "0")}`,
+    };
+    const updated = [...suppliers, newSupplier];
+    setSuppliers(updated);
+    localStorage.setItem("suppliers", JSON.stringify(updated));
+  };
+
+  const removeSupplier = (id: string) => {
+    const updated = suppliers.filter((s) => s.id !== id);
+    setSuppliers(updated);
+    localStorage.setItem("suppliers", JSON.stringify(updated));
+  };
+
   return (
-    <AdminContext.Provider value={{ isAdminLoggedIn, adminLogin, adminLogout, employees, addEmployee, removeEmployee, sales }}>
+    <AdminContext.Provider value={{ isAdminLoggedIn, adminLogin, adminLogout, employees, addEmployee, removeEmployee, sales, suppliers, addSupplier, removeSupplier }}>
       {children}
     </AdminContext.Provider>
   );
