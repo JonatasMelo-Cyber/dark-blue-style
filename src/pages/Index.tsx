@@ -42,7 +42,7 @@ const Index = () => {
               <Link
                 key={cat}
                 to={`/catalogo?categoria=${cat}`}
-                className="bg-card rounded-xl p-6 text-center border border-border hover:border-accent hover:shadow-lg transition-all group"
+                className="bg-accent/10 rounded-xl p-6 text-center border border-accent/20 hover:border-accent hover:shadow-lg transition-all group"
               >
                 <p className="font-semibold text-foreground group-hover:text-accent transition-colors">{cat}</p>
                 <p className="text-xs text-muted-foreground mt-1">
