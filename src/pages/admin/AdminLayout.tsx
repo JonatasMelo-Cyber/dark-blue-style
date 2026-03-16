@@ -17,7 +17,6 @@ const navItems = [
   { id: "suppliers", label: "Fornecedores", icon: Truck },
   { id: "sales", label: "Vendas", icon: ShoppingCart },
   { id: "reports", label: "Relatórios", icon: BarChart3 },
-  { id: "settings", label: "Personalizar", icon: Settings },
 ];
 
 const AdminLayout = () => {
