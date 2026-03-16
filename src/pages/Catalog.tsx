@@ -101,6 +101,18 @@ const Catalog = () => {
 
           {/* Products grid */}
           <div className="flex-1">
+            {/* Destaques */}
+            <div className="mb-10">
+              <h2 className="text-2xl font-bold text-foreground mb-6">Destaques</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {products.filter((_, i) => [0, 4, 8, 16].includes(i)).map((p) => (
+                  <ProductCard key={p.id} product={p} />
+                ))}
+              </div>
+            </div>
+
+            {/* Todos os produtos */}
+            <h2 className="text-2xl font-bold text-foreground mb-4">Todos os Produtos</h2>
             <p className="text-sm text-muted-foreground mb-6">{filtered.length} produto(s) encontrado(s)</p>
             {filtered.length === 0 ? (
               <div className="text-center py-20">
