@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="sticky top-0 z-50 bg-primary border-b border-navy-light/30">
-        <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+        <div className="w-full px-6 md:px-10 h-16 flex items-center justify-between">
           <Link to="/" className="text-xl font-bold tracking-wider text-primary-foreground">
             Nobile
           </Link>
