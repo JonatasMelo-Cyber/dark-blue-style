@@ -42,7 +42,7 @@ const AdminLayout = () => {
       {/* Sidebar */}
       <aside className={`${sidebarOpen ? "w-64" : "w-16"} bg-primary text-primary-foreground flex flex-col transition-all duration-300 shrink-0`}>
         <div className="h-16 flex items-center justify-between px-4 border-b border-primary-foreground/10">
-          {sidebarOpen && <span className="font-bold text-lg tracking-wide">Nobile<span className="text-accent">.</span> Admin</span>}
+          {sidebarOpen && <span className="font-bold text-lg tracking-wide">Nobile Admin</span>}
           <button onClick={() => setSidebarOpen(!sidebarOpen)} className="text-primary-foreground/70 hover:text-primary-foreground">
             {sidebarOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
